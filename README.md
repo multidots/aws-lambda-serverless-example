@@ -43,6 +43,28 @@ Success:
 ### Update .env file with your aws credentials 
 update .env: [http://docs.aws.amazon.com/lambda/latest/dg/tutorial-env_cli.html](http://docs.aws.amazon.com/lambda/latest/dg/tutorial-env_cli.html)
 
+```
+AWS_ENVIRONMENT=development
+AWS_ACCESS_KEY_ID= //aws access key 
+AWS_SECRET_ACCESS_KEY= //aws secret key 
+AWS_PROFILE=
+AWS_SESSION_TOKEN=
+AWS_ROLE_ARN= //aws role arn 
+AWS_REGION=us-west-2 // aws selected region
+AWS_FUNCTION_NAME=addition // name of lambda function
+AWS_HANDLER=index.handler
+AWS_MEMORY_SIZE=512 
+AWS_TIMEOUT=300 // set timeout eg: after 300 second it will timeout request
+AWS_DESCRIPTION=addition of two value // description 
+AWS_RUNTIME=nodejs6.10
+AWS_VPC_SUBNETS=
+AWS_VPC_SECURITY_GROUPS=
+AWS_TRACING_CONFIG=
+EXCLUDE_GLOBS="event.json"
+PACKAGE_DIRECTORY=build
+
+```
+
 ### Deploy lambda function
 ```
 node-lambda deploy
